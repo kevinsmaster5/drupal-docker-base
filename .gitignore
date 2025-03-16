@@ -20,15 +20,15 @@ mariadb-data/
 drupal-files/vendor/
 
 # Ignore configuration files that may contain sensitive information.
-drupal-files/sites/*/settings*.php
-drupal-files/sites/*/services*.yml
+drupal-files/web/sites/*/settings*.php
+drupal-files/web/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
-drupal-files/sites/*/files
-drupal-files/sites/*/private
+drupal-files/web/sites/*/files
+drupal-files/web/sites/*/private
 
 # Ignore multi-site test environment.
-drupal-files/sites/simpletest
+drupal-files/web/sites/simpletest
 
 # If you prefer to store your .gitignore file in the sites/ folder, comment
 # or delete the previous settings and uncomment the following ones, instead.
