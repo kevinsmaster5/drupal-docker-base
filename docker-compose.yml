@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  drupaltwo:
+    image: 'drupal:latest'
+    ports:
+      - '8081:80'
+    volumes:
+      - './drupal-data:/opt/drupal'
+    depends_on:
+      - 'mariadb'
+    
+  mariadb:
+    image: 'mariadb'
+    environment:
+      MARIADB_ROOT_PASSWORD: 'root'
+      MARIADB_DATABASE: 'database'
+      MARIADB_USER: 'database'
+      MARIADB_PASSWORD: 'database'
+    volumes:
+      - './mariadb-data:/var/lib/mysql'
+
+  adminer:
+    image: 'adminer'
+    ports:
+      - '8091:8091'
