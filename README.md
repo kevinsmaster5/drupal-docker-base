@@ -24,6 +24,11 @@ Access container command line
 
     docker compose exec drupal bash
 
+## Install Drupal core
+From the bash prompt
+
+    composer create-project drupal/recommended-project .
+
 ## References
 
 StackEdit https://stackedit.io/app
