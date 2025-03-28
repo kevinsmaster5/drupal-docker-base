@@ -24,6 +24,10 @@ Access container command line
 
     docker compose exec drupal bash
 
+You might find you have permissions issues in your drupal install. Fix it in bash by running
+
+    chown -R www-data:www-data web
+
 ## Install Drupal core
 From the bash prompt
 
